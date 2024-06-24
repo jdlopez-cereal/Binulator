@@ -1,0 +1,2 @@
+# Binulator
+Binary calculator
