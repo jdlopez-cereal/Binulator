@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"github.com/jdlopez-cereal/Binulator/Operations"
+	"github.com/jdlopez-cereal/Binulator/Base"
 )
 
 func main() {
@@ -13,7 +14,12 @@ func main() {
 	log.SetPrefix("Binulator: ")
 	log.SetFlags(0)
 	
-	answer, err := Operations.ExecuteOperation(1, 1, "+")
+	input1 := Binary.ConvertToDenary(101)
+	input2 := Binary.ConvertToDenary(10)
+	fmt.Println("Converting")
+	fmt.Println(input1)
+	fmt.Println(input2)
+	answer, err := Operations.ExecuteOperation(input1, input2, "+")
 
 	// If an error was returned, print it to the console and
 	// exit the program.
